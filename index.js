@@ -1,6 +1,6 @@
 // auto-generated index.js:
 
-Buffer = require("buffer").Buffer;
+window.Buffer = require("buffer").Buffer;
 require("bitcoinjs-lib");
 require("bigi");
 require("ethereumjs-tx");

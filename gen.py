@@ -20,10 +20,10 @@ def main():
     run('npm install -g browserify')
     with open(os.path.join(CURRENT_DIR, 'index.js'), 'w') as f:
         f.write('// auto-generated index.js:\n\n')
-        f.write('Buffer = require("buffer").Buffer;\n')
+        f.write('window.Buffer = require("buffer").Buffer;\n')
         for name in EXPORTS:
             f.write('require("%s");\n' % name)
-    genCmd = 'browserify %s index.js' % ' '.join(map(lambda s: '-r ' + s, EXPORTS))
+    genCmd = 'browserify -r buffer %s index.js' % ' '.join(map(lambda s: '-r ' + s, EXPORTS))
     with open(os.path.join(CURRENT_DIR, 'blockchain-lib.js'), 'w') as f:
         run(genCmd, stdout=f)
     print('generated ok.')
