@@ -10,3 +10,4 @@ require("bs58check");
 require("bip38");
 require("bip39");
 require("wif");
+require("bech32");
