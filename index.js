@@ -11,3 +11,4 @@ require("bip38");
 require("bip39");
 require("wif");
 require("bech32");
+require("create-hash");
