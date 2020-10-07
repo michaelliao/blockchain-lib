@@ -3,6 +3,7 @@
 window.Buffer = require("buffer").Buffer;
 require("bitcoinjs-lib");
 require("bigi");
+require("rlp");
 require("ethereumjs-tx");
 require("ethereumjs-util");
 require("bs58");
