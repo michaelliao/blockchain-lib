@@ -3,7 +3,7 @@
 
 import os, subprocess
 
-EXPORTS = ['bitcoinjs-lib', 'bigi', 'rlp', 'ethereumjs-tx', 'ethereumjs-util', 'bs58', 'bs58check', 'bip38', 'bip39', 'wif', 'bech32', 'create-hash']
+EXPORTS = ['bitcoinjs-lib', 'bigi', 'rlp', 'ethereumjs-tx', 'ethereumjs-util', 'bs58', 'bs58check', 'bip38', 'bip39', 'wif', 'bech32', 'create-hash', 'randombytes']
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
